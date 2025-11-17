@@ -1,55 +1,84 @@
-# Prerequisites
-*.d
+## Compilados generales
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]og/
+[Ll]ogs/
 
-# Object files
-*.o
-*.ko
+## Configuración de usuario (no compartir)
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+## Visual Studio Code (solo archivos de usuario)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## Archivos de solución y proyectos temporales
+*.aps
+*.ncb
+*.opendb
+*.cachefile
+
+## Resultados de tests
+[Tt]est[Rr]esult*/
+[Tt]est[Rr]esults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Paquetes NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+## Publicaciones / publish
+[Bb]in/[Rr]elease*/
+[Bb]in/[D]ebug*/
+publish/
+app.publish/
+
+## Archivos de configuración locales
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+## Residuos de compilación
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
+*.dll
 *.pdb
+*.ldb
+*.idb
+*.ilk
+*.pch
+*.pyo
+*.pyc
+*.tmp
+*.log
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+## Rider / JetBrains
+.idea/
+*.sln.iml
 
-# debug information files
-*.dwo
+## Herramientas de análisis
+*.sarif
+
+## Otros
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
